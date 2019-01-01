@@ -90,7 +90,7 @@ const Formatter = function (options) {
 
   this.relativeTo = options.relativeTo;
   this.markdown = !options.noMarkdown;
-  this.contentSlug = !!options.contentSlug;
+  this.contentSlug = true; // !!options.contentSlug;
   this.defaults = options.defaults;
   this.deriveLanguages = options.deriveLanguages || false;
   this.filenameStyle = options.filenameStyle || '_posts/:year-:month-:day-:slug';
